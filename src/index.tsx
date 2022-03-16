@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ReduxApp from './ReduxApp'
+import EcommerceApp from './app/layout/EcommerceApp'
 import './styles/styles.scss'
 
 ReactDOM.render(
-  <ReduxApp />,
+  <React.StrictMode>
+    <EcommerceApp />
+  </React.StrictMode>,
 
   document.getElementById("root")
 );
