@@ -1,11 +1,16 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
-import React from "react";
+import { Switch } from "@mui/material";
+interface Props {
+  switchDarkMode: () => void,
+  darkMode: boolean
+}
 
-const NavBar = () => {
+const NavBar = ({ darkMode, switchDarkMode }: Props) => {
   return (
-    <AppBar position="static" sx={{mb: 4}}>
+    <AppBar position="static" sx={{ mb: 4 }}>
       <Toolbar>
         <Typography variant="h6">Ecommerce website</Typography>
+        <Switch checked={darkMode} onChange={switchDarkMode} />
       </Toolbar>
     </AppBar>
   );
