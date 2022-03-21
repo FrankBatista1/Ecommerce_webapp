@@ -23,7 +23,7 @@ export const Catalog = () => {
   return (
     <>
       <ProductList products={products}></ProductList>
-      <Button variant="contained" onClick={addProduct}>
+      <Button variant='contained' onClick={addProduct}>
         Add product
       </Button>
     </>

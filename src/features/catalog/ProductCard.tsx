@@ -29,15 +29,13 @@ const ProductCard = ({ product }: Props) => {
         }}
       />
       <CardMedia
-        component="img"
-        height="140"
-        sx={{ backgroundSize: "contain" }}
+        sx={{ height: 140, backgroundSize: 'contain'}}
         image={product.pictureUrl}
         title={product.name}
       />
       <CardContent>
         <Typography gutterBottom color="secondary" variant="h5">
-           ${(product.price / 100).toFixed(2)}
+          ${(product.price / 100).toFixed(2)}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {product.brand} / {product.type}
